@@ -1,5 +1,5 @@
 ui/simple/menu/accelerator () {
-	my:match
+	local:match
 	print ${@//(#b)_(?)/${(e%)UI_ACCELERATOR_FMT:-'%B%F{red}$match[1]%f%b'}}
 }
 
